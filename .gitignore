@@ -1,0 +1,29 @@
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+local.properties
+keystore.properties
+*.jks
+*.keystore
+
+# Wir committen nur den Release-Build explizit
+!releases/app-release.apk
+
+# OS
+.DS_Store
+Thumbs.db
