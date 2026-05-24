@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "74193723216",
+    "project_id": "onager-scanner",
+    "storage_bucket": "onager-scanner.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74193723216:android:2f1aa8e339238ca3689655",
+        "android_client_info": {
+          "package_name": "ai.onager.scanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpp43W71dCMeBH34Ochuqqan1wO5LeWb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
