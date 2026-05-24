@@ -1,16 +1,56 @@
-# onager_scanner
+# Onager Scanner
 
-A new Flutter project.
+Flutter-basierte Dokument-Scanner-App für Android von [Onager AI](https://onager.ai).
 
-## Getting Started
+## App-Informationen
 
-This project is a starting point for a Flutter application.
+| Eigenschaft | Wert |
+|---|---|
+| Package | `ai.onager.scanner` |
+| Namespace | `ai.onager.onager_scanner` |
+| Min Android | 5.0 (API 21) |
+| Framework | Flutter (Dart) |
+| State | Riverpod |
+| Navigation | GoRouter |
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Native Dokumentenscanner (cunning_document_scanner)
+- Google Sign-In + Google Drive Upload (googleapis)
+- On-Device OCR (Google ML Kit Text Recognition)
+- Lokale Datenbank (sqflite)
+- PDF-Export mit Passwortschutz
+- Dunkel / Hell / System Theme
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Architektur
+
+```
+lib/
+  core/
+    database/     # sqflite AppDatabase
+    router/       # GoRouter
+    services/     # AuthService, DriveService
+    theme/        # AppTheme, AppColors
+  features/
+    auth/         # SplashScreen, LoginScreen
+    home/         # HomeScreen (Bibliothek)
+    scan/         # CameraScreen, MultipageScreen
+    edit/         # EditScreen (Filter, Crop, OCR)
+    export/       # ExportScreen + DriveSheet
+    settings/     # SettingsScreen
+  shared/
+    models/       # Document, ScannedPage
+    widgets/      # AppWidgets, OnagerLogo
+```
+
+## Sicherheit
+
+- `allowBackup="false"`, kein Cleartext-Traffic
+- APK Signing v2/v3
+- Kein hardcodierter API-Key
+- Kameraberechtigungen korrekt gesetzt
+
+## Legacy
+
+Die ursprüngliche Release-APK (v1.0.0) sowie der Security-Report sind unter `releases/` archiviert.
+Sicherheitsanalyse: [SECURITY_REPORT.md](SECURITY_REPORT.md)
