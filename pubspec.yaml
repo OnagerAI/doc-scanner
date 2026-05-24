@@ -1,0 +1,61 @@
+name: onager_scanner
+description: Onager Scanner – Dokumente scannen, bearbeiten und in Google Drive sichern.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+
+  # Navigation
+  go_router: ^13.2.0
+
+  # Google Auth + Drive
+  google_sign_in: ^6.2.1
+  googleapis: ^13.1.0
+  http: ^1.2.1
+  extension_google_sign_in_as_googleapis_auth: ^2.0.12
+
+  # ML Kit
+  google_mlkit_text_recognition: ^0.13.1
+  cunning_document_scanner: ^1.4.0
+
+  # Local Database
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  path_provider: ^2.1.3
+
+  # Image / PDF
+  image: ^4.1.7
+  pdf: ^3.11.1
+
+  # UI + Fonts
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.10+1
+  intl: ^0.19.0
+  share_plus: ^10.0.0
+
+  # Utils
+  shared_preferences: ^2.2.3
+  uuid: ^4.4.0
+  permission_handler: ^12.0.1
+  image_picker: ^1.1.2
+  url_launcher: ^6.3.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
