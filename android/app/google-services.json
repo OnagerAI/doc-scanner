@@ -12,7 +12,20 @@
           "package_name": "ai.onager.scanner"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "74193723216-sgcqsu8nk18s1l06e0ekhu06c8vi3ht5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ai.onager.scanner",
+            "certificate_hash": "2fc958c4f2f487d9f292f5af149705e39de4dd16"
+          }
+        },
+        {
+          "client_id": "74193723216-c86n712kkqhar6eg1vmv1f6r8egc17q5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCpp43W71dCMeBH34Ochuqqan1wO5LeWb4"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74193723216-c86n712kkqhar6eg1vmv1f6r8egc17q5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
